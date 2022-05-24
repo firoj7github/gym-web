@@ -1,0 +1,74 @@
+[
+    {
+       "id":1,
+       "name":"canon lence pro",
+       "price":"$300",
+       "description":"Best camera lence quality and best performance.",
+       "img":"https://i.ibb.co/DR2YDp1/pic1.png",
+       "availablequantity":"26",
+       "miniumorderquantity":"16"
+    },
+    {
+       "id":2,
+       "name":"canon lence pro",
+       "price":"$200",
+       "description":"Best camera lence quality and best performance.",
+       "img":"https://i.ibb.co/DR2YDp1/pic1.png",
+       "availablequantity":"32",
+       "miniumorderquantity":"10"
+    },
+    {
+       "id":3,
+       "name":"canon lence pro",
+       "price":"$180",
+       "description":"Best camera lence quality and best performance.",
+       "img":"https://i.ibb.co/DR2YDp1/pic1.png",
+       "availablequantity":"22",
+       "miniumorderquantity":"15"
+    },
+    {
+       "id":4,
+       "name":"canon lence pro",
+       "price":"$320",
+       "description":"Best camera lence quality and best performance.",
+       "img":"https://i.ibb.co/DR2YDp1/pic1.png",
+       "availablequantity":"36",
+       "miniumorderquantity":"18"
+    },
+    {
+       "id":5,
+       "name":"canon lence pro",
+       "price":"$260",
+       "description":"Best camera lence quality and best performance.",
+       "img":"https://i.ibb.co/DR2YDp1/pic1.png",
+       "availablequantity":"6",
+       "miniumorderquantity":"3"
+    },
+    {
+       "id":6,
+       "name":"canon lence pro",
+       "price":"$100",
+       "description":"Best camera lence quality and best  performance.",
+       "img":"https://i.ibb.co/DR2YDp1/pic1.png",
+       "availablequantity":"30",
+       "miniumorderquantity":"20"
+    },
+    {
+       "id":7,
+       "name":"canon lence pro",
+       "price":"$190",
+       "description":"Best camera lence quality and best performance.",
+       "img":"https://i.ibb.co/DR2YDp1/pic1.png",
+       "availablequantity":"20",
+       "miniumorderquantity":"15"
+    },
+    {
+       "id":8,
+       "name":"canon lence pro",
+       "price":"$360",
+       "description":"Best camera lence quality and best performance.",
+       "img":"https://i.ibb.co/DR2YDp1/pic1.png",
+       "availablequantity":"7",
+       "miniumorderquantity":"4"
+    }
+]

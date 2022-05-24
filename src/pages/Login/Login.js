@@ -43,7 +43,7 @@ const Login = () => {
           signInWithEmailAndPassword(data.email, data.password)
         };
     return (
-        <div className='flex h-screen justify-center items-center
+        <div className='flex h-screen justify-center items-center bg-black 
         '>
             <div class="card w-96 bg-base-100 shadow-xl">
   <div class="card-body">
