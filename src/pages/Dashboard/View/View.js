@@ -1,44 +1,27 @@
 import React from 'react';
 
-const View = ({order}) => {
-    const {userEmail, userName}=order;
+const View = ({man}) => {
+   const {email, role}=man;
+   const makeAdmin=()=>{
+     fetch(`http://localhost:5000/user/admin/${email}` ,{
+       method:'PUT',
+       headers:{
+         'authorization': `Bearer ${localStorage.getItem('accessToken')}`
+       }
+      
+     })
+     .then(res=>res.json())
+     .then(data=> console.log(data))
+   }
     return (
-        <div class="overflow-x-auto">
-  <table class="table w-full">
-   
-    <thead>
       <tr>
-        <th></th>
-        <th>Name</th>
-        <th>Job</th>
-        <th>Favorite Color</th>
-      </tr>
-    </thead>
-    <tbody>
-      
-      <tr>
-        <th>1</th>
-        <td>Cy Ganderton</td>
-        <td>Quality Control Specialist</td>
-        <td>Blue</td>
-      </tr>
-      
-      <tr>
-        <th>2</th>
-        <td>Hart Hagerty</td>
-        <td>Desktop Support Technician</td>
-        <td>Purple</td>
-      </tr>
-     
-      <tr>
-        <th>3</th>
-        <td>Brice Swyre</td>
-        <td>Tax Accountant</td>
-        <td>Red</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+               
+                
+                
+      <td>{email}</td>
+      <td>{role !=='admin' && <button onClick={makeAdmin} class="btn btn-xs">Make Admin</button>}</td>
+      <td><button class="btn btn-xs">Remove User</button></td>
+    </tr>
     );
 };
 

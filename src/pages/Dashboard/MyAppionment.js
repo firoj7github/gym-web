@@ -4,7 +4,12 @@ import View from './View/View';
 const MyAppionment = () => {
     const [orders, setOrder]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/booking')
+        fetch('http://localhost:5000/booking', {
+          method:'GET',
+          headers:{
+            'authorization': `Bearer ${localStorage.getItem('accessToken')}`
+          }
+        })
         .then(res=>res.json())
         .then(data=>setOrder(data));
     },[])

@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from 'react';
+import View from './View/View';
 
 const MyReview = () => {
     const [mans,setMan]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/user')
+        fetch('http://localhost:5000/user', {
+          method:'GET',
+          headers:{
+            'authorization': `Bearer ${localStorage.getItem('accessToken')}`
+          }
+        })
         .then(res=>res.json())
         .then(data=> setMan(data))
     },[])
@@ -24,14 +30,7 @@ const MyReview = () => {
     </thead>
     <tbody>
         {
-            mans.map(man=><tr>
-               
-                
-                
-                <td>{man.email}</td>
-                <td><button class="btn btn-xs">Make Admin</button></td>
-                <td><button class="btn btn-xs">Remove User</button></td>
-              </tr>)
+            mans.map(man=> <View man={man}></View>)
         }
      
       
