@@ -5,7 +5,7 @@ const Footer = () => {
         <footer class="footer  p-10 bg-neutral text-neutral-content">
         <div className='ml-40'>
           <span class="footer-title">Services</span> 
-          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Lence</a>
           <a class="link link-hover">Design</a>
           <a class="link link-hover">Marketing</a>
           <a class="link link-hover">Advertisement</a>
@@ -18,8 +18,8 @@ const Footer = () => {
           <a class="link link-hover">Press kit</a>
         </div> 
         <div>
-          <span class="footer-title">Legal</span> 
-          <a class="link link-hover">Terms of use</a>
+          <span class="footer-title">Views</span> 
+          <a class="link link-hover">Our product</a>
           <a class="link link-hover">Privacy policy</a>
           <a class="link link-hover">Cookie policy</a>
         </div>

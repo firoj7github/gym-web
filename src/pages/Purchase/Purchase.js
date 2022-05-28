@@ -29,7 +29,7 @@ const Purchase = () => {
           phoneNumber :phone,
           productName :product
     }
-     console.log(booking.phoneNamber);
+     
     fetch('http://localhost:5000/booking',{
   method:'POST',
   headers:{'content-type':'application/json'},

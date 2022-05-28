@@ -16,6 +16,8 @@ import { ToastContainer } from 'react-toastify';
 import MyAppionment from './pages/Dashboard/MyAppionment';
 import MyReview from './pages/Dashboard/MyReview';
 import Footer from './pages/Shared/Footer/Footer';
+import Reviews from './pages/Reviews/Reviews';
+
 
 
 function App() {
@@ -27,11 +29,17 @@ function App() {
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/myprotfolio' element={<MyProtfolio></MyProtfolio>}></Route>
+       
         <Route path='*' element={<Notfound></Notfound>}></Route>
         <Route path='/signup' element={<Signup></Signup>}></Route>
         <Route path='/purchase' element={
         <RequireAuth>
           <Purchase></Purchase>
+        </RequireAuth>
+        }></Route>
+        <Route path='/reviews' element={
+        <RequireAuth>
+         <Reviews></Reviews>
         </RequireAuth>
         }></Route>
         <Route path='/dashboard' element={
