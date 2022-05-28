@@ -6,17 +6,30 @@ import PurchaseProduct from '../PurchaseProduct/PurchaseProduct';
 
 const Purchase = () => {
     const [user] = useAuthState(auth);
+    const [phone, setPhone]=useState('');
+    
+    const [product, setProduct]=useState('');
+
+    const handleProduct=event=>{
+        event.preventDefault();
+        const productName=event.target.value;
+        setProduct(productName);
+    }
+    const handlePhone=event=>{
+        event.preventDefault();
+        const phoneNumber=event.target.value;
+        setPhone( phoneNumber);
+    }
     const handleBooking=event=>{
         event.preventDefault();
-        const phoneNamber=event.target.phone.value;
-        const productName=event.target.productName.value;
+       
           const booking ={
           userEmail:user.email,
           userName :user.displayName,
-          phoneNamber :phoneNamber,
-          productName :productName
+          phoneNumber :phone,
+          productName :product
     }
-
+     console.log(booking.phoneNamber);
     fetch('http://localhost:5000/booking',{
   method:'POST',
   headers:{'content-type':'application/json'},
@@ -40,8 +53,8 @@ const Purchase = () => {
                  <form onSubmit={handleBooking} className='grid grid-cols-1 gap-3 justify-center ml-96 '>
            <input type="text" disabled name='name' value={user?.displayName || ''}   class="input w-full max-w-xs" />
     <input type="email" disabled name='email' value={user?.email || ''}  class="input w-full max-w-xs" />
-    <input type="text" name='phone' placeholder="phone number" class="input w-full max-w-xs" />
-    <input type="text" name='productName' placeholder="Product Name " class="input w-full max-w-xs" />
+    <input onChange={handlePhone} type="text" name='phone' placeholder="phone number" class="input w-full max-w-xs" />
+    <input onChange={handleProduct} type="text" name='productName' placeholder="Product Name " class="input w-full max-w-xs" />
     <input type="submit" value='submit' class="btn btn-primary w-full max-w-xs" />
             </form>
 

@@ -3,6 +3,7 @@ import React from 'react';
 const View = ({man}) => {
    const {email, role}=man;
    const makeAdmin=()=>{
+     console.log(email);
      fetch(`http://localhost:5000/user/admin/${email}` ,{
        method:'PUT',
        headers:{

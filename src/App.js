@@ -15,6 +15,7 @@ import { ToastContainer } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 import MyAppionment from './pages/Dashboard/MyAppionment';
 import MyReview from './pages/Dashboard/MyReview';
+import Footer from './pages/Shared/Footer/Footer';
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
         </Route>
       </Routes>
       <ToastContainer />
+      <Footer></Footer>
       
     </div>
   );

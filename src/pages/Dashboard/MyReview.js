@@ -30,7 +30,7 @@ const MyReview = () => {
     </thead>
     <tbody>
         {
-            mans.map(man=> <View man={man}></View>)
+            mans.map(man=> <View key={man._id} man={man}></View>)
         }
      
       
