@@ -1,8 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Manage = ({service}) => {
-    const {_id, name, price, description, availablequantity, img, minimumorderquantity}=service;
+    const { name, price, description, availablequantity, img, minimumorderquantity}=service;
     const [services, setServices]= useState([]);
+    useEffect(()=>{
+        fetch('http://localhost:5000/service')
+        .then(res=> res.json())
+        .then(data => setServices(data));
+    },[])
     const handleDelete = id=>{
         const proceed = window.confirm('Are You sure???');
         if(proceed){
