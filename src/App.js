@@ -18,6 +18,7 @@ import MyReview from './pages/Dashboard/MyReview';
 import Footer from './pages/Shared/Footer/Footer';
 import Reviews from './pages/Reviews/Reviews';
 import AddReview from './pages/Dashboard/AddReview';
+import AddItem from './pages/AddItem/AddItem';
 
 
 
@@ -29,6 +30,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/addItem' element={<AddItem></AddItem>}></Route>
         <Route path='/myprotfolio' element={<MyProtfolio></MyProtfolio>}></Route>
        
         <Route path='*' element={<Notfound></Notfound>}></Route>
