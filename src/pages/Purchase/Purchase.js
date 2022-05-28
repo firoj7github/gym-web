@@ -39,7 +39,7 @@ const Purchase = () => {
 .then(data=>{console.log(data)
 
     if(data.success){
-        toast('Booking Done')
+        toast.success('Booking Done')
       }
       
 
