@@ -17,6 +17,7 @@ import MyAppionment from './pages/Dashboard/MyAppionment';
 import MyReview from './pages/Dashboard/MyReview';
 import Footer from './pages/Shared/Footer/Footer';
 import Reviews from './pages/Reviews/Reviews';
+import AddReview from './pages/Dashboard/AddReview';
 
 
 
@@ -49,6 +50,7 @@ function App() {
         }>
          <Route index element={<MyAppionment></MyAppionment>}></Route>
          <Route path='myReview' element={<MyReview></MyReview>}></Route>
+         <Route path='addReview' element={<AddReview></AddReview>}></Route>
 
         </Route>
       </Routes>
