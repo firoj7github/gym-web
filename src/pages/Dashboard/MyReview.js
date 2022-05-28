@@ -15,7 +15,7 @@ const MyReview = () => {
     },[])
     return (
         <div>
-            <h2 className='text-center pt-5 text-2xl pb-5 font-bold'>My Order</h2>
+            <h2 className='text-center pt-5 text-2xl pb-5 font-bold'>All User</h2>
             <div class="overflow-x-auto">
   <table class="table w-full">
    
