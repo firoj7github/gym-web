@@ -11,12 +11,16 @@ const Service = () => {
        .then(data=>setService(data))
     },[])
     return (
-        <div className='service-all grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-20'>
+        <div>
+            <h1 className='text-center font-bold text-4xl '>Purchase Product</h1>
+            <div className='service-all grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-20'>
            {
                services.slice(0,3).map(service=> <Item service={service}></Item>
               )
            } 
         </div>
+        </div>
+        
     );
 };
 

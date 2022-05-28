@@ -4,3 +4,11 @@
     width: 100%;
     background-repeat: no-repeat;
 }
+
+@media screen and(max-width:576px) {
+    .banner-all{
+        
+        width: auto;
+        background-repeat: no-repeat;
+    }   
+}

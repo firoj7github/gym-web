@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Manage from './Manage';
+
 
 const ManageOrder = () => {
     const [services, setService]=useState([]);
@@ -11,8 +11,7 @@ const ManageOrder = () => {
     const handleDelete = id=>{
         const proceed = window.confirm('Are You sure???');
         if(proceed){
-        const url = `http://localhost:5000/service/${id}`
-        fetch(url, {
+        fetch(`http://localhost:5000/service/${id}`, {
         method : 'DELETE'
         })
         .then(res => res.json())
