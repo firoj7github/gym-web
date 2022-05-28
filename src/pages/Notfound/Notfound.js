@@ -1,9 +1,10 @@
 import React from 'react';
+import img from '../../image/visuals-JpTY4gUviJM-unsplash.jpg'
 
 const Notfound = () => {
     return (
         <div>
-            <h1 className='text-center pt-40 text-3xl text-primary'>Opps 404 page !!!</h1>
+           <img src={img}></img>
         </div>
     );
 };
