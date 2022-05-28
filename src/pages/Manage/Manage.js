@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 const Manage = ({service}) => {
-    const { name, price, description, availablequantity, img, minimumorderquantity}=service;
+    const {_id, name, price, description, availablequantity, img, minimumorderquantity}=service;
     const [services, setServices]= useState([]);
     useEffect(()=>{
         fetch('http://localhost:5000/service')

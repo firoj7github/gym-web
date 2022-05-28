@@ -1,3 +1,19 @@
+Project Name:My lence
+server side link :
+clint side link :
+Live link:
+
+*firabase use
+*react hook from use
+*heruku use
+*daisyUi use
+*react use
+*react-router use
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
