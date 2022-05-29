@@ -20,9 +20,9 @@ const MyProtfolio = () => {
                 <li>Express Js</li>
                 <li>Node Js</li>
                 <h1 className='font-bold'>Live Website Link :</h1>
-                <p>Link1: https://incredible-sprite-50231f.netlify.app </p>
+                <p>Link1:https://incredible-sprite-50231f.netlify.app </p>
                 <p>Link1:https://mellow-stardust-70be3a.netlify.app  </p>
-                <p>Link1:travel-web-9911a.web.app </p>
+                <p>Link1:travel-web-9911a.web.app</p>
             </div>
            
         </div>

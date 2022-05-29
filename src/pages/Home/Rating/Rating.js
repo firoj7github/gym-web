@@ -5,7 +5,7 @@ const Rating = () => {
 
         <div>
             <h1 className='text-center font-bold text-4xl mt-20'>Summery</h1>
-            <div class="stats shadow w-full mt-20 mb-20  ml-40">
+            <div class="stats shadow w-full mt-20 mb-20  ml-24">
   
   <div class="stat mr-10">
     <div class="stat-figure text-primary">
@@ -27,11 +27,11 @@ const Rating = () => {
   
   <div class="stat">
     <div class="stat-figure text-secondary">
-      <div class="avatar online">
+      {/* <div class="avatar online">
         <div class="w-16 rounded-full">
           <img src="https://api.lorem.space/image/face?w=128&h=128" />
         </div>
-      </div>
+      </div> */}
     </div>
     <div class="stat-value">86%</div>
     <div class="stat-title">Interest</div>

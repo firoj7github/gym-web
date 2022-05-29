@@ -50,7 +50,7 @@ const Purchase = () => {
     return (
         <div className=''>
             
-    <form onSubmit={handleBooking} className='grid grid-cols-1 gap-3 justify-center ml-96 '>
+    <form onSubmit={handleBooking} className='grid grid-cols-1 gap-3 justify-center ml-96 mb-20'>
     <input type="text" disabled name='name' value={user?.displayName || ''}   class="input w-full max-w-xs" />
     <input type="email" disabled name='email' value={user?.email || ''}  class="input w-full max-w-xs" />
     <input onChange={handlePhone} type="text" name='phone' placeholder="phone number" class="input w-full max-w-xs" />

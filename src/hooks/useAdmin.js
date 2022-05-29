@@ -28,7 +28,7 @@ const useAdmin = user => {
              )
         }
 
-    },[user])
+    },[user?.email])
     return [admin]
 };
 

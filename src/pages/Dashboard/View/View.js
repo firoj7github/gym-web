@@ -1,10 +1,11 @@
 import React from 'react';
 
 const View = ({man}) => {
-   const {email, role}=man;
+   const {email, role}=man||{};
+   
    const makeAdmin=()=>{
-     console.log(email);
-     fetch(`http://localhost:5000/user/admin/${email}` ,{
+    console.log(email);
+     fetch(`http://localhost:5000/user/admin?email=${email}` ,{
        method:'PUT',
        headers:{
          'authorization': `Bearer ${localStorage.getItem('accessToken')}`
