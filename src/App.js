@@ -9,7 +9,7 @@ import Signup from './pages/Login/Signup';
 import Purchase from './pages/Purchase/Purchase';
 import RequireAuth from './RequireAuth';
 import Notfound from './pages/Notfound/Notfound';
-import MyProtfolio from './pages/MyProtfolio/MyProtfolio';
+
 import Dashboard from './pages/Dashboard/Dashboard';
 import { ToastContainer } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
@@ -33,7 +33,7 @@ function App() {
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/addItem' element={<AddItem></AddItem>}></Route>
         <Route path='/manageOrder' element={<ManageOrder></ManageOrder>}></Route>
-        <Route path='/myprotfolio' element={<MyProtfolio></MyProtfolio>}></Route>
+        
        
         <Route path='*' element={<Notfound></Notfound>}></Route>
         <Route path='/signup' element={<Signup></Signup>}></Route>

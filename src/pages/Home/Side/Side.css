@@ -1,0 +1,26 @@
+.side-all{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(20, 20, 20);
+    width: 100%;
+    height: 850px;
+}
+.side-clip{
+    background-color: rgb(38, 38, 38);
+    clip-path: polygon(63% 0, 63% 23%, 83% 23%, 100% 100%, 0 100%, 0 14%);
+    width: 900px;
+    margin-top: -260px;
+}
+.side-img img{
+    width: 230px;
+    height: 320px;
+}
+.side-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    width: 540px;
+    margin-left: -200px;
+    z-index: 1;
+    padding-top: 180px;
+}

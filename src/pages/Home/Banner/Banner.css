@@ -1,8 +1,51 @@
 .banner-all{
-    background: url(../../../image/Untitled-1.png);
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   background-color: rgb(20, 20, 20);
     height: 600px;
     width: 100%;
-    background-repeat: no-repeat;
+   
+}
+.banner-2{
+    padding-top: 40px;
+}
+.banner-1 h1{
+   color: white;
+   font-size: 60px;
+   font-weight: 700;
+   padding-top: 140px;
+   margin-left: 110px;
+   margin-bottom: 17px;
+  
+}
+.banner-btn{
+    background-color: chocolate;
+    color: white;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 110px;
+   
+}
+.banner-1 h2{
+   color: white;
+   font-size: 55px;
+   font-weight: 600;
+  
+}
+.banner-1 h1, h2{
+   
+}
+.banner-1 p{
+    color: white;
+    margin-left: 110px;
+    width: 570px;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 @media screen and(max-width:576px) {
