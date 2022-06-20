@@ -2,35 +2,145 @@
    
     background-color: rgb(20, 20, 20);
     width: 100%;
-    height: 700px;
+    height: 800px;
 }
 .set{
     width: 1100px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-left: 100px;
+    padding-top: 70px;
 }
 .set-1{
     border: 1px solid white;
-    width: 500px;
-    height: 300px;
+    width: 360px;
+    height: 280px;
     border-radius: 5px;
 }
 .set-2{
     border: 1px solid white;
-    width: 500px;
-    height: 300px;
+    width: 360px;
+    height: 280px;
     border-radius: 5px;
 }
 .set-3{
     border: 1px solid white;
-    width: 500px;
-    height: 300px;
+    width: 360px;
+    height: 280px;
     border-radius: 5px;
 }
 .set-4{
     border: 1px solid white;
-    width: 500px;
-    height: 300px;
+    width: 360px;
+    height: 280px;
     border-radius: 5px;
+  
+ 
+}
+.set-4{
+    border: 1px solid white;
+    width: 360px;
+    height: 280px;
+    border-radius: 5px;
+}
+.icon-style {
+    color: darkslategray;
+    font-size: 35px;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-left: 7px;
+    padding-top: 6px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.set-1 h2{
+    color: white;
+    margin-left: 30px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    
+}
+.set-1 p{
+    margin-left: 30px;
+    font-size: 18px; 
+    color: white; 
+    width: 320px;
+}
+.set-2 h2{
+    color: white;
+    margin-left: 30px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    
+}
+.set-2 p{
+    margin-left: 30px;
+    font-size: 18px; 
+    color: white; 
+    width: 320px;
+}
+.set-3 h2{
+    color: white;
+    margin-left: 30px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    
+}
+.set-3 p{
+    margin-left: 30px;
+    font-size: 18px; 
+    color: white; 
+    width: 320px;
+}
+.set-4 h2{
+    color: white;
+    margin-left: 30px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    
+}
+.set-5 h2{
+    color: white;
+    margin-left: 30px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    
+}
+.set-4 p{
+    margin-left: 30px;
+    font-size: 18px; 
+    color: white; 
+    width: 320px;
+}
+.set-5 p{
+    margin-left: 30px;
+    font-size: 18px; 
+    color: white; 
+    width: 320px;
+}
+.second-part{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 770px;
+   
+    margin-left: 290px;
+   
+    margin-top: 22px;
+   
+}
+.set-all h4{
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    padding-top: 55px;
+    font-weight: 600;
 }
