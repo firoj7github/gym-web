@@ -3,13 +3,27 @@
     grid-template-columns: repeat(2, 1fr);
     background-color: rgb(20, 20, 20);
     width: 100%;
-    height: 850px;
+    height: 500px;
 }
 .side-clip{
-    background-color: rgb(38, 38, 38);
+    background-color: rgb(26, 25, 25);
     clip-path: polygon(63% 0, 63% 23%, 83% 23%, 100% 100%, 0 100%, 0 14%);
     width: 900px;
     margin-top: -260px;
+   padding-left: 100px;
+}
+.side-clip h3{
+    color: white;
+    padding-top: 400px;
+    font-size: 49px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.side-clip p{
+    color: white;
+    width: 470px;
+    font-size: 18px;
+    text-justify: auto;
 }
 .side-img img{
     width: 230px;
@@ -20,7 +34,7 @@
     grid-template-columns: repeat(2, 1fr);
     
     width: 540px;
-    margin-left: -200px;
+    margin-left: -170px;
     z-index: 1;
     padding-top: 180px;
 }
