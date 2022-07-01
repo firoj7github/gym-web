@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Purchase from '../../Purchase/Purchase';
 import Item from '../Item/Item';
 import './Service.css'
+import { Link } from 'react-router-dom';
 import logo from '../../../image/Rectangle-24-5.png'
 import logo1 from '../../../image/Rectangle-24-9.png'
 import logo2 from '../../../image/Rectangle-24-10.png'
@@ -24,37 +25,37 @@ const Service = () => {
                 <img src={logo} alt="Gym"></img>
                 <h1>How to start your daily yoga?</h1>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.</p>
-                <button className='service-btn'>Booking</button>
+                <Link to='/purchase' className='service-btn'>Booking</Link>
                 </div>
                 <div className='service-2'>
                 <img src={logo1} alt="Gym"></img>
                 <h1>How to start your daily yoga?</h1>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.</p>
-                <button className='service-btn'>Booking</button>
+                <Link to='/purchase' className='service-btn'>Booking</Link>
                 </div>
                 <div className='service-3'>
                 <img src={logo2} alt="Gym"></img>
                 <h1>How to start your daily yoga?</h1>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.</p>
-                <button className='service-btn'>Booking</button>
+                <Link to='/purchase' className='service-btn'>Booking</Link>
                 </div>
                 <div className='service-4'>
                 <img src={logo3} alt="Gym"></img>
                 <h1>How to start your daily yoga?</h1>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.</p>
-                <button className='service-btn'>Booking</button>
+                <Link to='/purchase' className='service-btn'>Booking</Link>
                 </div>
                 <div className='service-5'>
                 <img src={logo4} alt="Gym"></img>
                 <h1>How to start your daily yoga?</h1>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.</p>
-                <button className='service-btn'>Booking</button>
+                <Link to='/purchase' className='service-btn'>Booking</Link>
                 </div>
                 <div className='service-6'>
                 <img src={logo5} alt="Gym"></img>
                 <h1>How to start your daily yoga?</h1>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.</p>
-                <button className='service-btn'>Booking</button>
+                <Link to='/purchase' className='service-btn'>Booking</Link>
                 </div>
            
             </div>

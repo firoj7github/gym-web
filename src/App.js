@@ -29,10 +29,10 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/blog' element={<Blog></Blog>}></Route>
+        {/* <Route path='/blog' element={<Blog></Blog>}></Route> */}
         <Route path='/login' element={<Login></Login>}></Route>
-        <Route path='/addItem' element={<AddItem></AddItem>}></Route>
-        <Route path='/manageOrder' element={<ManageOrder></ManageOrder>}></Route>
+        {/* <Route path='/addItem' element={<AddItem></AddItem>}></Route> */}
+        {/* <Route path='/manageOrder' element={<ManageOrder></ManageOrder>}></Route> */}
         
        
         <Route path='*' element={<Notfound></Notfound>}></Route>
@@ -59,7 +59,7 @@ function App() {
         </Route>
       </Routes>
       <ToastContainer />
-      <Footer></Footer>
+      
       
     </div>
   );

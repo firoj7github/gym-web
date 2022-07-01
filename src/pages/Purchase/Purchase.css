@@ -1,0 +1,32 @@
+.manage-size{
+    background-color: darkslategray;
+    width: 400px;
+    margin-top: 170px;
+    height: 300px;
+    border-radius: 7px;
+}
+.field-size-1{
+    width: 350px;
+    margin-top: 10px;
+    margin-left: 25px;
+   
+  
+}
+.field-size-2{
+    width: 350px;
+    margin-left: 25px;
+   
+  
+}
+.field-size-3{
+    width: 350px;
+    margin-left: 25px;
+   
+  
+}
+.field-size-4{
+    width: 350px;
+    margin-left: 25px;
+   
+  
+}

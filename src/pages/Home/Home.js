@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Shared/Footer/Footer';
 import Banner from './Banner/Banner';
 import Hero from './Hero';
 import Rating from './Rating/Rating';
@@ -13,6 +14,7 @@ const Home = () => {
           <Side></Side> 
           <Set></Set>
           <Service></Service> 
+          <Footer></Footer>
         
         </div>
     );

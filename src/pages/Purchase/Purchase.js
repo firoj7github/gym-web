@@ -3,6 +3,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 import PurchaseProduct from '../PurchaseProduct/PurchaseProduct';
+import './Purchase.css'
 
 const Purchase = () => {
     const [user] = useAuthState(auth);
@@ -50,12 +51,12 @@ const Purchase = () => {
     return (
         <div className=''>
             
-    <form onSubmit={handleBooking} className='grid grid-cols-1 gap-3 justify-center ml-96 mb-20'>
-    <input type="text" disabled name='name' value={user?.displayName || ''}   class="input w-full max-w-xs" />
-    <input type="email" disabled name='email' value={user?.email || ''}  class="input w-full max-w-xs" />
-    <input onChange={handlePhone} type="text" name='phone' placeholder="phone number" class="input w-full max-w-xs" />
-    <input onChange={handleProduct} type="text" name='productName' placeholder="Product Name " class="input w-full max-w-xs" />
-    <input type="submit" value='submit' class="btn btn-primary w-full max-w-xs" />
+    <form onSubmit={handleBooking} className='grid manage-size grid-cols-1  justify-center ml-96 mb-20'>
+    <input className='' type="text" disabled name='name' value={user?.displayName || ''}   class="input w-full max-w-xs field-size-1" />
+    <input className='' type="email" disabled name='email' value={user?.email || ''}  class="input w-full max-w-xs field-size-2" />
+    <input className='' onChange={handlePhone} type="text" name='phone' placeholder="phone number" class="input w-full max-w-xs field-size-3" />
+    
+    <input className='' type="submit" value='submit' class="btn btn-primary w-full max-w-xs field-size-4" />
             </form>
 
 

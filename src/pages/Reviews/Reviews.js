@@ -9,7 +9,7 @@ const Reviews = () => {
 
     const [views, setView]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/review')
+        fetch('review.json')
         .then(res=>res.json())
         .then(data=> setView(data))
     },[])
@@ -27,6 +27,8 @@ const Reviews = () => {
        
         <th>User Comment</th>
         <th>User Review</th>
+        <th>User Email</th>
+       
         
       </tr>
     </thead>
@@ -38,6 +40,7 @@ const Reviews = () => {
                
                 <td>{review.userComment}</td>
                 <td>{review.userReview}</td>
+                <td>{review.userEmail}</td>
               </tr>)
         }
         </tbody>
