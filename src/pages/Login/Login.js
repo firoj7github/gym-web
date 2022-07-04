@@ -1,10 +1,11 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { Link, useNavigate } from 'react-router-dom';
-import auth from '../../firebase.init';
+
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import useToken from '../../hooks/useToken';
+import auth from '../../firebase.init';
 
 
 const Login = () => {
@@ -31,13 +32,11 @@ const Login = () => {
         let signInError;
        
         
-        if(loading || gLoading){
-          return <button class="btn loading">loading</button>
-        }
+        
         if(error || gError){
         signInError = <p>{error?.message || gError?.message}</p>
         }
-        if(token){
+        if(gUser || user){
         navigate('/');
         }
         const onSubmit = data => {

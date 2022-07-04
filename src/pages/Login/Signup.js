@@ -27,13 +27,11 @@ const Signup = () => {
           );
         }
         let signInError;
-        if(loading || gLoading ||updating){
-          return <button class="btn loading">loading</button>
-        }
+        
         if(error || gError ||updateError){
         signInError = <p>{error?.message || gError?.message ||updateError?.message}</p>
         }
-        if(token){
+        if(gUser || user){
           navigate('/')
         }
         const onSubmit = async data => {
