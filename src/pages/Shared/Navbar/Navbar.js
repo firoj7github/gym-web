@@ -46,7 +46,7 @@ const Navbar = () => {
     </a>
   </div>
   <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal p-0">
+    <ul class="menu menu-horizontal p-0 menu-size">
     {menuItem}
     </ul>
   </div>
