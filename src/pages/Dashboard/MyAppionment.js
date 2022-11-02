@@ -25,20 +25,20 @@ const MyAppionment = () => {
         <th>Name</th>
         <th>Email</th>
         <th>Phone Number</th>
-        <th>Product Name</th>
+        <th>Service Name</th>
       </tr>
     </thead>
     <tbody>
-        {
-            orders.map(order=><tr>
-               
-                <th>{order.userName}</th>
+       
+            
+    <tr>
+                <th>Firoj Hossain</th>
                 
-                <td>{order.userEmail}</td>
-                <td>{order.phoneNamber}</td>
-                <td>{order.productName}</td>
-              </tr>)
-        }
+                <td>fkfiroj02@gmail.com</td>
+                <td>01781129819</td>
+                <td>Gym</td>
+              </tr>
+ 
      
       
      

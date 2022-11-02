@@ -41,12 +41,16 @@ function App() {
         <RequireAuth>
           <Purchase></Purchase>
         </RequireAuth>
-        }></Route>
-        <Route path='/reviews' element={
+        }>
+
+        </Route>
+        {/* <Route path='/reviews' element={
         <RequireAuth>
          <Reviews></Reviews>
         </RequireAuth>
-        }></Route>
+        }>
+          
+        </Route> */}
         <Route path='/dashboard' element={
         <RequireAuth>
           <Dashboard></Dashboard>

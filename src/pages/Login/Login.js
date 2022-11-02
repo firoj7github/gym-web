@@ -101,8 +101,8 @@ const Login = () => {
 <input className='btn w-full max-w-xs' type="submit" value='login' />
     </form>
     <p>New to doctor portals? <Link className='text-primary' to='/signup'>Plz register</Link></p>
-    <div class="divider">OR</div>
-    <button onClick={()=>signInWithGoogle()} class="btn btn-accent">continue with google</button>
+    {/* <div class="divider">OR</div> */}
+    {/* <button onClick={()=>signInWithGoogle()} class="btn btn-accent">continue with google</button> */}
     </div>
   </div>
 </div>

@@ -1,4 +1,4 @@
-Live Link : https://bespoke-baklava-eea176.netlify.app/
+Live Link : https://nimble-puppy-ae274c.netlify.app/
 Code link :https://github.com/firoj7github/gym-web
 
 

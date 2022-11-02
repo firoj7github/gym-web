@@ -21,7 +21,7 @@ const Navbar = () => {
     {/* <li><Link to='addItem'>Add A Product</Link></li> */}
     {/* <li><Link to='manageOrder'>Manage All Order</Link></li> */}
   
-    <li><Link to='/reviews'>Reviews</Link></li>
+    {/* <li><Link to='/reviews'>Reviews</Link></li> */}
     
     {
       user && <li><Link to='/dashboard'>Dashboard</Link></li>
